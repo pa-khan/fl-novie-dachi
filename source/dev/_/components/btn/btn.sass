@@ -16,3 +16,37 @@
 	transition: .3s
 	outline: none
 	border-bottom: none
+	border-radius: 10px
+	&.--sm
+		font-size: 14px
+		font-weight: 500
+		height: 42px
+		padding-bottom: 2px
+	&.--md
+		font-size: 18px
+		font-weight: 500
+		height: 68px
+	&.--gradient
+		color: #fff
+		&.--sm
+			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1)
+		&.--md
+			box-shadow: 0 3px 14px 2px rgba(172, 214, 81, 0.25)
+		&:before, &:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			transition: .3s
+		&:before
+			z-index: -2
+			background-image: linear-gradient(to left, #afd74f 0%, #15a9ac 84%, #15a9ac 100%)
+		&:after
+			z-index: -1
+			opacity: 0
+			background-image: linear-gradient(to left, #b4d84c 0%, #b4d84c 1%, #23ada4 93%, #23ada4 100%)
+		&:hover
+			&:after
+				opacity: 1

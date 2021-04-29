@@ -2,4 +2,59 @@ include ../../sys/pug/vars
 
 footer.footer
 	.case
-		
+		.panel.row
+			.panel__logo
+				img(src="" alt="")
+			.panel__desc Дачный поселок #[br]«Новые дачи»
+			.panel__socials.socials
+				.socials__list
+					a.socials__item(href="" target="_blank")
+						img(src="" alt="")
+					a.socials__item(href="" target="_blank")
+						img(src="" alt="")
+					a.socials__item(href="" target="_blank")
+						img(src="" alt="")
+					a.socials__item(href="" target="_blank")
+						img(src="" alt="")
+			.panel__info
+				.panel__office.office
+					.office__title Офис продаж:
+					.office__wrap.row
+						.office__icon
+							img(src="" alt="")
+						.office__value Нижний Новгород, #[br]ул. Пискунова, 29
+			.panel__contacts
+				.panel__contacts-title Бесплатная консультация:
+				.panel__phone.phone
+					.phone__icon
+						img(src="" alt="")
+					.phone__value #[a(href="tel:+79307072555") +7 (930) 707-25-55]
+				.panel__email.email
+					.email__icon
+						img(src="" alt="")
+					.email__value #[a(href="mailto:sale@new-cottages.ru") sale@new-cottages.ru]
+		.copy © 2021.  Дачный поселок «Новые дачи». Все права защищены
+
+	.up#top
+
+
+.popups
+	.popup.--sm#popup-callback
+		.popup__close
+		.popup__title.h3 Заказать обратный #[br]звонок
+		.popup__form
+			.popup__input.input.--md.--bg-white.--icon
+				.input__wrap
+					.input__icon
+					input.input__area(type="text" name="name" placeholder="Ваше имя")
+			.popup__input.input.--md.--bg-white.--icon.--phone
+				.input__wrap
+					.input__icon
+					input.input__area(type="text" name="phone" placeholder="Ваш телефон")
+			button.popup__btn.btn.--gradient.--md Узнать подробнее
+			.popup__policy Нажимая на кнопку, вы #[a(href="") даете согласие] #[br]на обработку своих персональных данных
+
+	.popup.--sm#popup-thanks
+		.popup__close
+		.popup__title.h4 Спасибо!
+		.popup__text Ваша заявка успешно отправлена.

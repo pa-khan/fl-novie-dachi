@@ -6,3 +6,67 @@ include ../../blocks/header/header
 +style('footer', 'blocks')
 include ../../blocks/footer/footer
 
+//- intro 
++style('intro', 'blocks')
+include ../../blocks/intro/intro
+
+//- about 
++style('about', 'blocks')
+include ../../blocks/about/about
+
+//- advantages 
++style('advantages', 'blocks')
+include ../../blocks/advantages/advantages
+
+//- why 
++style('why', 'blocks')
+include ../../blocks/why/why
+
+//- desc 
++style('desc', 'blocks')
+include ../../blocks/desc/desc
+
+//- scheme 
++style('scheme', 'blocks')
+include ../../blocks/scheme/scheme
+
+//- attractions 
++style('attractions', 'blocks')
+include ../../blocks/attractions/attractions
+
+//- steps 
++style('steps', 'blocks')
+include ../../blocks/steps/steps
+
+//- earth 
++style('earth', 'blocks')
+include ../../blocks/earth/earth
+
+//- pay 
++style('pay', 'blocks')
+include ../../blocks/pay/pay
+
+//- build 
++style('build', 'blocks')
+include ../../blocks/build/build
+
+//- capabilities 
++style('capabilities', 'blocks')
+include ../../blocks/capabilities/capabilities
+
+//- gallery 
++style('gallery', 'blocks')
+include ../../blocks/gallery/gallery
+
+//- faq 
++style('faq', 'blocks')
+include ../../blocks/faq/faq
+
+//- order 
++style('order', 'blocks')
+include ../../blocks/order/order
+
+//- location 
++style('location', 'blocks')
+include ../../blocks/location/location
+
