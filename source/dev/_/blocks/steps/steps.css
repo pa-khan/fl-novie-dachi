@@ -1,0 +1,99 @@
+.steps {
+  text-align: center;
+  padding-bottom: 62px;
+}
+.steps__title {
+  margin-bottom: 60px;
+}
+.steps__list {
+  margin-bottom: 60px;
+}
+.steps__item {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.steps__item:after {
+  position: absolute;
+  content: "";
+  top: 26px;
+  right: -30px;
+  width: 80px;
+  height: 47px;
+  background: url(../../sys/imgs/arrow-gray.png) no-repeat;
+}
+.steps__item:last-of-type:after {
+  display: none;
+}
+.steps__icon {
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.steps__name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.steps__text {
+  font-size: 20px;
+  line-height: 27.5px;
+}
+.steps__btn {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1220px) {
+  .steps__item:after {
+    width: 60px;
+    background-size: contain;
+  }
+  .steps__text {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .steps__list {
+    margin-bottom: 40px;
+  }
+  .steps__item {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .steps__item:nth-of-type(2):after {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .steps__list {
+    margin-bottom: -70px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .steps__item {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  .steps__item:after {
+    width: 80px;
+    transform: rotate(90deg);
+    top: 250px;
+    right: 100px;
+  }
+  .steps__item:nth-of-type(2):after {
+    display: block;
+  }
+  .steps__item:nth-of-type(3):after {
+    top: 280px;
+  }
+  .steps__icon {
+    margin-bottom: 20px;
+  }
+}

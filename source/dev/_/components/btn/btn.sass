@@ -50,3 +50,25 @@
 		&:hover
 			&:after
 				opacity: 1
+	&.--b-blue
+		border: 1px solid #2791c2
+		&:before, &:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			transition: .3s
+		&:before
+			z-index: -2
+			background: linear-gradient(to left, #fff 0%, #fff 1%, #fff 93%, #fff 100%)
+		&:after
+			z-index: -1
+			opacity: 0
+			background: linear-gradient(to left, #b4d84c 0%, #b4d84c 1%, #23ada4 93%, #23ada4 100%)
+		&:hover
+			color: #fff
+			border-color: transparent
+			&:after
+				opacity: 1
