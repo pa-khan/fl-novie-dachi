@@ -15,8 +15,7 @@
 		background-color: #ffffff
 		padding: 11px 11px 38px
 		box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.15)
-		&-wrap
-			
+		cursor: pointer
 	&__data
 		padding-left: 10px
 		padding-right: 10px
@@ -46,12 +45,35 @@
 		margin-top: 21px
 		&.--sm
 			font-size: 16px
+
 @media screen and (max-width: 1220px)
-	// .desc
-		
+	.desc
+		&__list
+			margin-left: -5px
+			margin-left: -5px
+		&__item
+			width: calc( 25% - 10px )
+			margin-left: 5px
+			margin-right: 5px
+
 @media screen and (max-width: 992px)
-	// .desc
+	.desc
+		&__list
+			margin-bottom: -10px
+		&__item
+			width: calc( 50% - 10px )
+			margin-bottom: 10px
+		&__img
+			img
+				margin-left: auto
+				margin-right: auto
 		
 @media screen and (max-width: 767px)
-	// .desc
-		
+	.desc
+		&__list
+			margin-left: 0
+			margin-right: 0
+		&__item
+			width: 100%
+			margin-left: 0
+			margin-right: 0
