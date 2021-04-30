@@ -1,0 +1,20 @@
+.faq {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.faq__title {
+  margin-bottom: 27px;
+}
+.faq__subtitle {
+  margin-bottom: 62px;
+}
+.faq__list {
+  background: #fff;
+  box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.15);
+}
+.faq__item {
+  border-bottom: 1px solid #d3d4d3;
+}
+.faq__q {
+  font-size: 20px;
+}

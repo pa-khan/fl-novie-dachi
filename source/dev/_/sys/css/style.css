@@ -413,6 +413,18 @@ path, circle, rect, line {
   scroll-snap-type: y mandatory;
 }
 
+.tog-head {
+  cursor: pointer;
+}
+.tog-body {
+  max-height: 0;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.tog.--show .tog-body {
+  height: auto;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6 {
   text-align: center;
 }
