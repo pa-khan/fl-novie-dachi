@@ -20,6 +20,13 @@
 .overflow-disable
 	overflow: hidden
 
+.bg
+	z-index: -1
+	width: 1440px
+	position: absolute
+	top: 0
+	left: 50%
+	transform: translateX(-50%)
 
 .panel
 	align-items: center
@@ -45,6 +52,8 @@
 		margin-right: 7px
 		&:last-of-type
 			margin-right: 0
+		&:hover
+			transform: scale(.9)
 
 .phone, .email
 	display: flex

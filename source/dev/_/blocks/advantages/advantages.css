@@ -1,0 +1,23 @@
+.advantages {
+  text-align: center;
+}
+.advantages__item {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.advantages__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 118px;
+  margin-bottom: 22px;
+}
+.advantages__text {
+  font-size: 20px;
+  line-height: 27.5px;
+}
+.advantages__text strong {
+  font-weight: 600;
+}

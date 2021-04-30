@@ -1,0 +1,19 @@
+.about {
+  padding-top: 95px;
+  padding-bottom: 60px;
+}
+.about__title {
+  margin-bottom: 50px;
+}
+.about__img-wrap {
+  width: 350px;
+  padding-top: 35px;
+}
+.about__content {
+  width: calc(100% - 350px);
+  padding-left: 30px;
+}
+.about__readmore {
+  max-width: 350px;
+  margin-top: 60px;
+}

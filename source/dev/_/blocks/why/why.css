@@ -1,0 +1,33 @@
+.why {
+  position: relative;
+  padding-top: 55px;
+}
+.why__bg-before {
+  top: -340px;
+}
+.why__title-wrap {
+  margin-bottom: 62px;
+}
+.why__wrap {
+  position: relative;
+  min-height: 306px;
+  padding-top: 62px;
+}
+.why__item {
+  width: 33.333%;
+  color: #fff;
+  text-align: center;
+}
+.why__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.why__text {
+  font-size: 20px;
+  line-height: 27.55px;
+}
+.why__text strong {
+  font-weight: 600;
+}

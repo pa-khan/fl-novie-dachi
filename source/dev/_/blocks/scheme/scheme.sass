@@ -1,7 +1,33 @@
 @import ../../sys/sass/vars
 
-// .scheme
-
+.scheme
+	position: relative
+	&__title-wrap
+		margin-bottom: 62px
+	&__wrap
+		position: relative
+		height: 594px
+	&__areas
+		width: 1049px
+		height: 419px
+		position: absolute
+		top: 31px
+		left: 50%
+		margin-left: 5px
+		transform: translateX(-50%)
+	&__area
+		z-index: 1
+		position: absolute
+		&-bg
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			opacity: 0.2
+	&__data
+		display: none
+		
 @media screen and (max-width: 1220px)
 	// .scheme
 		

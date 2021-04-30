@@ -1,0 +1,34 @@
+.scheme {
+  position: relative;
+}
+.scheme__title-wrap {
+  margin-bottom: 62px;
+}
+.scheme__wrap {
+  position: relative;
+  height: 594px;
+}
+.scheme__areas {
+  width: 1049px;
+  height: 419px;
+  position: absolute;
+  top: 31px;
+  left: 50%;
+  margin-left: 5px;
+  transform: translateX(-50%);
+}
+.scheme__area {
+  z-index: 1;
+  position: absolute;
+}
+.scheme__area-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+.scheme__data {
+  display: none;
+}

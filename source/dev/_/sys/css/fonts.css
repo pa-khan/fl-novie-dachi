@@ -10,7 +10,7 @@
   font-family: "Commissioner";
   src: url("../fonts/Commissioner-Bold.eot");
   src: url("../fonts/Commissioner-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Commissioner-Bold.woff2") format("woff2"), url("../fonts/Commissioner-Bold.woff") format("woff"), url("../fonts/Commissioner-Bold.ttf") format("truetype"), url("../fonts/Commissioner-Bold.svg#Commissioner-Bold") format("svg");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -26,7 +26,7 @@
   font-family: "Commissioner";
   src: url("../fonts/Commissioner-ExtraBold.eot");
   src: url("../fonts/Commissioner-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Commissioner-ExtraBold.woff2") format("woff2"), url("../fonts/Commissioner-ExtraBold.woff") format("woff"), url("../fonts/Commissioner-ExtraBold.ttf") format("truetype"), url("../fonts/Commissioner-ExtraBold.svg#Commissioner-ExtraBold") format("svg");
-  font-weight: bold;
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
