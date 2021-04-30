@@ -1,13 +1,44 @@
 @import ../../sys/sass/vars
 
-// .location
+.location
+	padding-top: 62px
+	&__title
+		margin-bottom: 62px
+	&__list
+		display: grid
+		grid: none / repeat(5, 1fr)
+		justify-items: center
+		margin-bottom: 62px
+	&__item
+		text-align: center
+	&__icon
+		height: 87px
+		margin-bottom: 38px
+		img
+			margin-left: auto
+			margin-right: auto
 
-@media screen and (max-width: 1220px)
-	// .location
+@media screen and (max-width: 1140px)
+	.location
+		&__text
+			font-size: 17px
 		
 @media screen and (max-width: 992px)
-	// .location
-		
+	.location
+		&__list
+			grid: none / repeat(3, 1fr)
+			gap: 30px 0
+		&__icon
+			margin-bottom: 25px
+
 @media screen and (max-width: 767px)
-	// .location
+	.location
+		&__list
+			grid: none / repeat(2, 1fr)			
+		
+@media screen and (max-width: 480px)
+	.location
+		&__list
+			grid: none / repeat(1, 1fr)
+
 		
