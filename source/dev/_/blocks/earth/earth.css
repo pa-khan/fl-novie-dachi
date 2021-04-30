@@ -1,0 +1,31 @@
+.earth {
+  position: relative;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.earth:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  top: 50px;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f8f8f8;
+  width: 1440px;
+}
+.earth__title {
+  margin-bottom: 15px;
+}
+.earth__btn {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+.earth__policy {
+  text-align: center;
+}
