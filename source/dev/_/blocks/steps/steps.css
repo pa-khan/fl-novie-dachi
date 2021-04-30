@@ -22,7 +22,8 @@
   right: -30px;
   width: 80px;
   height: 47px;
-  background: url(../../sys/imgs/arrow-gray.png) no-repeat;
+  background: url(../../sys/imgs/arrow-gray.svg) no-repeat;
+  background-size: contain;
 }
 .steps__item:last-of-type:after {
   display: none;
@@ -49,7 +50,7 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1140px) {
   .steps__item:after {
     width: 60px;
     background-size: contain;
