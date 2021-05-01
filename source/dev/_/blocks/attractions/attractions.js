@@ -9,18 +9,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
 				nextEl: '.attractions__arrow.swiper-button-next',
 				prevEl: '.attractions__arrow.swiper-button-prev',
 			},
-			// breakpoints: {
-			// 	320: {
-			// 		slidesPerView: 1,
-			// 	},
-			// 	767: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 15,
-			// 	},
-			// 	992: {
-			// 		slidesPerView: 3,
-			// 	}
-			// },
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+				},
+				767: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+				1140: {
+					slidesPerView: 4,
+				}
+			},
 		});
 	}
 })

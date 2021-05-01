@@ -23,3 +23,21 @@
 .up.--show {
   transform: scale(1);
 }
+
+@media screen and (max-width: 767px) {
+  .footer .panel {
+    flex-direction: column;
+  }
+  .footer .panel__socials {
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  .footer .panel__contacts {
+    justify-content: center;
+  }
+
+  .copy {
+    margin-top: 20px;
+  }
+}

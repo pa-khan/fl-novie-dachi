@@ -17,6 +17,9 @@
 		
 @media screen and (max-width: 992px)
 	.about
+		padding-top: 40px
+		&__title
+			margin-bottom: 30px
 		&__wrap
 			flex-direction: column
 		&__img
@@ -29,6 +32,23 @@
 			width: 100%
 			padding-left: 0
 		&__readmore
+			max-width: 250px
 			margin-left: auto
 			margin-right: auto
-			margin-top: 40px
+			margin-top: 30px
+
+@media screen and (max-width: 767px)
+	.about
+		padding-bottom: 50px
+		&__title
+			br
+				display: none
+		&__readmore
+			margin-top: 15px
+
+@media screen and (max-width: 370px)
+	.about
+		&__img-wrap
+			width: 100%
+			max-width: 350px
+			

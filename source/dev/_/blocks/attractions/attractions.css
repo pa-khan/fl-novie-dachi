@@ -53,3 +53,48 @@
 .attractions__arrow:hover polygon {
   fill: #2791c2;
 }
+
+@media screen and (max-width: 1240px) {
+  .attractions__title {
+    margin-bottom: 30px;
+  }
+  .attractions__wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .attractions__arrow.swiper-button-prev {
+    left: 0;
+  }
+  .attractions__arrow.swiper-button-next {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .attractions__title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .attractions {
+    padding-top: 40px;
+  }
+  .attractions__item-wrap {
+    padding-bottom: 20px;
+  }
+  .attractions__img {
+    margin-bottom: 15px;
+  }
+  .attractions__img img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .attractions {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  .attractions__title {
+    margin-bottom: 10px;
+  }
+}

@@ -5,6 +5,7 @@
 	color: #fff
 	padding-top: 50px
 	padding-bottom: 60px
+	height: 404px
 	&:before
 		z-index: -1
 		position: absolute
@@ -32,12 +33,39 @@
 			&:hover
 				border-color: transparent
 
-@media screen and (max-width: 1220px)
-	// .earth
+@media screen and (max-width: 1140px)
+	.earth
+		padding-top: 65px
+			
 		
 @media screen and (max-width: 992px)
-	// .earth
+	.earth
+		height: auto
+		overflow: hidden
+		padding-top: 50px
+		padding-bottom: 50px
+		&__title
+			margin-bottom: 0
+		&__bg
+			width: 100%
+			height: 100%
+			left: 0
+			transform: none
+			img
+				transform: scale(1.3)
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&__btn
+			margin-top: 30px
+			margin-bottom: 30px
+		&__policy
+			font-size: 16px
+			
 		
 @media screen and (max-width: 767px)
-	// .earth
+	.earth
+		&__btn
+			margin-top: 20px
+			margin-bottom: 20px
 		

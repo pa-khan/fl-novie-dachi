@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 				nextEl: '.gallery__arrow.swiper-button-next',
 				prevEl: '.gallery__arrow.swiper-button-prev',
 			},
-			// breakpoints: {
+			breakpoints: {
 			// 	320: {
 			// 		slidesPerView: 1,
 			// 	},
@@ -18,10 +18,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			// 		slidesPerView: 2,
 			// 		spaceBetween: 15,
 			// 	},
-			// 	992: {
-			// 		slidesPerView: 3,
-			// 	}
-			// },
+				0: {
+					slidesPerView: 1,
+				},
+				992: {
+					slidesPerView: 2,
+				}
+			},
 		});
 	}
 })

@@ -92,3 +92,33 @@
 		width: calc(100% - 22px)
 		line-height: 29px
 		
+@media screen and (max-width: 1140px)
+	.panel__info.--ml
+		margin-left: 15px
+		
+@media screen and (max-width: 992px)
+	.panel
+		&__logo
+			width: 100px
+		&__desc, &__info
+			display: none
+		&__socials
+			margin-right: 20px
+			
+		&__contacts
+			&-title
+				display: none
+			
+			
+@media screen and (max-width: 380px)
+	.panel
+		&__logo
+			width: 80px
+		&__contacts
+			width: 180px
+	.phone
+		&__value
+			font-size: 16px
+	.email
+		&__value
+			font-size: 14px

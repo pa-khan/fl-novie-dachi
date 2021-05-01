@@ -63,11 +63,42 @@
 		
 
 @media screen and (max-width: 1140px)
-	// .faq
+	.faq
+		padding-bottom: 50px
+		&__title
+			margin-bottom: 35px
+		&__subtitle
+			display: none
+		&__item
+			&.--show
+				.faq
+					&__a
+						margin-top: 15px
+						margin-bottom: 25px
+				
+					
+		&__name
+			font-size: 18px
+
+		&__a
+			font-size: 16px
+			line-height: 21px
 		
 @media screen and (max-width: 992px)
-	// .faq
+	.faq
+		&__item
+			&:after
+				left: 0px
+				right: 0px
+		&__q
+			padding: 12px 15px
+			font-size: 18px
+		&__a
+			padding-left: 15px
+			padding-right: 15px
 		
 @media screen and (max-width: 767px)
-	// .faq
+	.faq
+		padding-top: 40px
+		padding-bottom: 40px
 		

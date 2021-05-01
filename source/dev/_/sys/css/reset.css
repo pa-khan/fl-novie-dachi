@@ -86,6 +86,9 @@ path, circle, rect, line, polygon {
 .wrap {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
   min-height: 100%;
   overflow: hidden;
 }

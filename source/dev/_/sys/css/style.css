@@ -134,6 +134,9 @@ path, circle, rect, line, polygon {
 .wrap {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
   min-height: 100%;
   overflow: hidden;
 }
@@ -274,6 +277,12 @@ path, circle, rect, line, polygon {
   opacity: 1;
 }
 
+@media screen and (max-width: 992px) {
+  .btn.--md {
+    font-size: 16px;
+    height: 56px;
+  }
+}
 .input__wrap {
   position: relative;
 }
@@ -332,6 +341,12 @@ path, circle, rect, line, polygon {
   fill: #f00;
 }
 
+@media screen and (max-width: 992px) {
+  .input.--md .input__area {
+    font-size: 16px;
+    height: 56px;
+  }
+}
 .popup {
   z-index: 99999;
   position: fixed;
@@ -656,6 +671,58 @@ path, circle, rect, line, polygon {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1140px) {
+  .h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .h3 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .h4 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .h3 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .t1 h3, .t1 ul, .t1 p {
+    margin-bottom: 15px;
+  }
+}
 .overflow-disable {
   overflow: hidden;
 }
@@ -750,4 +817,40 @@ path, circle, rect, line, polygon {
 .office__value {
   width: calc(100% - 22px);
   line-height: 29px;
+}
+
+@media screen and (max-width: 1140px) {
+  .panel__info.--ml {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .panel__logo {
+    width: 100px;
+  }
+  .panel__desc, .panel__info {
+    display: none;
+  }
+  .panel__socials {
+    margin-right: 20px;
+  }
+  .panel__contacts-title {
+    display: none;
+  }
+}
+@media screen and (max-width: 380px) {
+  .panel__logo {
+    width: 80px;
+  }
+  .panel__contacts {
+    width: 180px;
+  }
+
+  .phone__value {
+    font-size: 16px;
+  }
+
+  .email__value {
+    font-size: 14px;
+  }
 }

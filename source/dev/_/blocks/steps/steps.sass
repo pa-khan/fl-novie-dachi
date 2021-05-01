@@ -47,6 +47,7 @@
 	.steps
 		&__item
 			&:after
+				right: -40px
 				width: 60px
 				background-size: contain
 		&__text
@@ -54,30 +55,42 @@
 		
 @media screen and (max-width: 992px)
 	.steps
-		&__list
+		&__title
 			margin-bottom: 40px
+		&__list
+			margin-bottom: 10px
 		&__item
 			width: 50%
-			margin-bottom: 20px
+			margin-bottom: 25px
 			&:nth-of-type(2)
 				&:after
 					display: none
+		&__icon
+			height: 80px
+			margin-bottom: 20px
+		&__btn
+			max-width: 230px
 				
 @media screen and (max-width: 767px)
 	.steps
+		padding-bottom: 40px
+		&__title
+			margin-bottom: 30px
 		&__list
-			margin-bottom: -70px
+			margin-bottom: -30px
 			max-width: 280px
 			margin-left: auto
 			margin-right: auto
 		&__item
 			width: 100%
-			margin-bottom: 150px
+			margin-bottom: 30px
 			&:after
-				width: 80px
+				display: none
+				width: 50px
 				transform: rotate(90deg)
-				top: 250px
-				right: 100px
+				top: auto
+				bottom: -75px
+				right: 125px
 			&:nth-of-type(2)
 				&:after
 					display: block
@@ -88,4 +101,7 @@
 				
 		&__icon
 			margin-bottom: 20px
+
+		&__btn
+			margin-top: 20px
 		

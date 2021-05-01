@@ -3,6 +3,7 @@
   color: #fff;
   padding-top: 50px;
   padding-bottom: 60px;
+  height: 404px;
 }
 .earth:before {
   z-index: -1;
@@ -35,4 +36,46 @@
 }
 .earth__policy a:hover {
   border-color: transparent;
+}
+
+@media screen and (max-width: 1140px) {
+  .earth {
+    padding-top: 65px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .earth {
+    height: auto;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .earth__title {
+    margin-bottom: 0;
+  }
+  .earth__bg {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transform: none;
+  }
+  .earth__bg img {
+    transform: scale(1.3);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .earth__btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .earth__policy {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .earth__btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

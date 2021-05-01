@@ -60,6 +60,12 @@
 }
 
 @media screen and (max-width: 1140px) {
+  .pay__title {
+    margin-bottom: 30px;
+  }
+  .pay__item {
+    padding: 30px 25px 25px;
+  }
   .pay__img {
     transform: scale(0.8);
   }
@@ -69,32 +75,45 @@
   .pay__img.--t88 {
     top: 100px;
   }
+  .pay__name {
+    font-size: 21px;
+  }
+  .pay__desc {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 992px) {
+  .pay {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .pay__list {
-    margin-left: 0;
-    margin-right: 0;
     margin-bottom: -20px;
   }
   .pay__item {
-    width: 100%;
-    height: 335px;
-    margin-left: 0;
-    margin-right: 0;
+    height: 250px;
     margin-bottom: 20px;
-    padding: 40px 20px 30px 40px;
+    padding: 20px;
   }
   .pay__img {
+    width: 290px;
     transform: none;
   }
   .pay__img.--t70 {
-    top: 30px;
+    top: 60px;
   }
   .pay__img.--t88 {
-    top: 50px;
+    top: 90px;
+  }
+  .pay__btn {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
+  .pay {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .pay__list {
     max-width: 315px;
     width: 100%;
@@ -102,11 +121,13 @@
     margin-right: auto;
   }
   .pay__item {
-    height: 370px;
-    padding: 20px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 15px;
   }
   .pay__name {
-    font-size: 24px;
+    font-size: 21px;
   }
   .pay__desc {
     font-size: 18px;
@@ -121,6 +142,6 @@
     top: 0;
   }
   .pay__img.--t88 {
-    transform: scale(1.2);
+    top: 0;
   }
 }

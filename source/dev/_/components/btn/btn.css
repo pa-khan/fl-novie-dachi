@@ -88,3 +88,10 @@
 .btn.--b-blue:hover:after {
   opacity: 1;
 }
+
+@media screen and (max-width: 992px) {
+  .btn.--md {
+    font-size: 16px;
+    height: 56px;
+  }
+}

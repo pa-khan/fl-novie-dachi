@@ -39,6 +39,15 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .build {
+    padding-top: 40px;
+  }
+  .build__title {
+    margin-bottom: 15px;
+  }
+  .build__subtitle {
+    margin-bottom: 30px;
+  }
   .build__list {
     margin-left: -10px;
     margin-right: -10px;

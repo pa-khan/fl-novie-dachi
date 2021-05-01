@@ -19,6 +19,12 @@
 }
 
 @media screen and (max-width: 992px) {
+  .about {
+    padding-top: 40px;
+  }
+  .about__title {
+    margin-bottom: 30px;
+  }
   .about__wrap {
     flex-direction: column;
   }
@@ -35,8 +41,26 @@
     padding-left: 0;
   }
   .about__readmore {
+    max-width: 250px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about {
+    padding-bottom: 50px;
+  }
+  .about__title br {
+    display: none;
+  }
+  .about__readmore {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .about__img-wrap {
+    width: 100%;
+    max-width: 350px;
   }
 }

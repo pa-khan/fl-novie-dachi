@@ -47,17 +47,70 @@
 			polygon
 				fill: rgba(255,255,255,.5)
 		&.swiper-button-prev
-			left: -71px
+			left: -51px
 		&.swiper-button-next
-			right: -71px
+			right: -51px
 
 
-@media screen and (max-width: 1220px)
+@media screen and (max-width: 1240px)
+	.gallery
+		&__title
+			margin-bottom: 40px
+		&__wrap
+			padding-left: 40px
+			padding-right: 40px
+		&__arrow
+			&.swiper-button-prev
+				left: 0
+			&.swiper-button-next
+				right: 0
+
+@media screen and (max-width: 1140px)
 	// .gallery
 		
 @media screen and (max-width: 992px)
 	// .gallery
 		
 @media screen and (max-width: 767px)
-	// .gallery
+	.gallery
+		overflow: hidden
+		height: auto
+		padding-top: 40px
+		padding-bottom: 40px
+		&__title
+			br
+				display: none
+		&__img
+			border-width: 10px
+		&__bg
+			left: 0
+			right: 0
+			transform: none
+			width: 100%
+			height: 100%
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				transform: scale(1.2)
+
+		&__name
+			padding: 10px
+			font-size: 16px
+			bottom: 10px
+			max-width: 100%
+			min-width: 1px
+			width: 100%
+			
 		
+@media screen and (max-width: 540px)
+	.gallery
+		&__img
+			height: 300px
+
+@media screen and (max-width: 380px)
+	.gallery
+		&__title
+			margin-bottom: 30px
+		&__img
+			height: 250px
