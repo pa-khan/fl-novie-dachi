@@ -79,7 +79,7 @@ svg {
   display: block;
 }
 
-path, circle, rect, line {
+path, circle, rect, line, polygon {
   transition: 0.3s;
 }
 

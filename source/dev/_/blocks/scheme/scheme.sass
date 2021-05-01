@@ -8,6 +8,7 @@
 		position: relative
 		height: 594px
 	&__areas
+		z-index: 10
 		width: 1049px
 		height: 419px
 		position: absolute
@@ -16,8 +17,31 @@
 		margin-left: 5px
 		transform: translateX(-50%)
 	&__area
-		z-index: 1
+		z-index: 10
 		position: absolute
+		cursor: pointer
+		&[data-status="free"]
+			.cls-1
+				fill: #7ec86d
+		&[data-status="ordered"]
+			.cls-1
+				fill: #facead
+		&[data-status="sealed"]
+			.cls-1
+				fill: #f79476
+		&[data-status="cheap"]
+			.cls-1
+				fill: #daadd5
+		.cls-2
+			fill: #fff7b8
+
+		.cls-1, .cls-2
+			fill-rule: evenodd
+
+		.cls-3
+			fill: $black
+		&-text
+			display: none
 		&-bg
 			position: absolute
 			top: 0
@@ -25,9 +49,139 @@
 			right: 0
 			bottom: 0
 			opacity: 0.2
+		&:hover
+			.cls-1
+				opacity: 0.4
 	&__data
-		display: none
+		// display: none
+	&__road
+		z-index: 1
+		width: 1012px
+		height: 401px
+		top: 47px
+		margin-left: 15px
+	&__road-outline
+		z-index: 2
+		width: 1014px
+		height: 430px
+		top: 45px
+		margin-left: 14px
 		
+.s-data
+	z-index: 90
+	position: absolute
+	width: 255px
+	padding: 48px 28px 23px
+	background-color: #fff
+	box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.15)
+	opacity: 0
+	visibility: hidden
+	transition: .3s
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	&.--show
+		opacity: 1
+		visibility: visible
+	&__status
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 0 19px
+		height: 39px
+		font-weight: 600
+		position: absolute
+		top: 0
+		left: 0
+		color: #fff
+		&[data-status="free"]
+			background-color: #7ec86d
+		&[data-status="ordered"]
+			background-color: #facead
+		&[data-status="sealed"]
+			background-color: #f79476
+		&[data-status="cheap"]
+			background-color: #daadd5
+	&__close
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		position: absolute
+		top: 4px
+		right: 4px
+		width: 15px
+		height: 15px
+		cursor: pointer
+		&:before, &:after
+			content: ''
+			display: block
+			width: 15px
+			height: 2px
+			background-color: #d3d4d3
+			border-radius: 5px
+			transition: .3s
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+			margin-top: -2px
+		&:hover
+			&:before, &:after
+				background-color: $black
+
+	&__name
+		font-weight: 700
+		text-align: left
+
+	&__values
+		padding-top: 18px
+		padding-bottom: 18px
+		margin-top: 18px
+		margin-bottom: 18px
+		border-top: 1px solid #d3d4d3
+		border-bottom: 1px solid #d3d4d3
+
+	&__text
+		&-title
+			text-align: left
+			margin-bottom: 5px
+		&-wrap
+			line-height: 21.5px
+			ul
+				flex-direction: column
+	&__order
+		margin-top: 28px
+
+.s-values
+	&__item
+		display: flex
+		line-height: 21.5px
+	&__name
+		margin-right: 6px
+	&__value
+		text-align: right
+		.s-data-price-old, .s-data-price-new
+			width: 100%
+		.s-data-price-old
+			color: #94969a
+			var
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					top: 50%
+					left: 0
+					right: 0
+					height: 1px
+					background-color: #94969a
+
+		.s-data-price-new
+			color: #ea4862
+			font-weight: 700
+
+	
+
 @media screen and (max-width: 1220px)
 	// .scheme
 		
