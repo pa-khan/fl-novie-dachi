@@ -70,3 +70,7 @@ include ../../blocks/order/order
 +style('location', 'blocks')
 include ../../blocks/location/location
 
+//- modal 
++style('modal', 'blocks')
+include ../../blocks/modal/modal
+

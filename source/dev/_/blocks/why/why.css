@@ -23,6 +23,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 35px;
+  height: 102px;
 }
 .why__text {
   font-size: 20px;
@@ -30,4 +31,36 @@
 }
 .why__text strong {
   font-weight: 600;
+}
+
+@media screen and (max-width: 1140px) {
+  .why__icon {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .why__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .why__wrap {
+    background: #7EBA68;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .why__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .why__item:last-of-type {
+    margin-bottom: 0;
+  }
+  .why__icon {
+    margin-bottom: 15px;
+  }
+  .why__bg {
+    display: none;
+  }
 }

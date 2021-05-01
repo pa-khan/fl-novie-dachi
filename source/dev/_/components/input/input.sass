@@ -5,9 +5,53 @@
 		position: relative
 	&__area
 		width: 100%
+		font-size: $fzMain
 		font-family: $ffMain
 		color: #fff
+		border-radius: 10px
 		background-color: transparent
 		&::placeholder
-			opacity: 0.5
-			color: #fff
+			opacity: 1
+			transition: .3s
+		&:focus
+			&::placeholder
+				opacity: 0
+	&__icon
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+	&.--md
+		.input
+			&__area
+				height: 68px
+				padding-left: 20px
+				padding-right: 20px
+		&.--icon
+			.input
+				&__area
+					padding-left: 55px
+				&__icon
+					width: 16px
+					left: 25px
+					path
+						fill: #94969a
+	&.--bg-white
+		.input
+			&__area
+				color: $black
+				background-color: #fff
+				&::placeholder
+					color: $black
+	&.--b-gray
+		.input
+			&__area
+				border: 1px solid #d3d4d3
+	&.--error
+		.input
+			&__area
+				color: #f00
+				&::placeholder
+					color: #f00
+			&__icon
+				path
+					fill: #f00

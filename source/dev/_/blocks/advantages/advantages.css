@@ -21,3 +21,37 @@
 .advantages__text strong {
   font-weight: 600;
 }
+
+@media screen and (max-width: 992px) {
+  .advantages__list {
+    margin-bottom: -30px;
+  }
+  .advantages__item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .advantages__icon {
+    margin-bottom: 20px;
+  }
+  .advantages__text {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 210px;
+  }
+  .advantages__text br {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .advantages__list {
+    margin-bottom: -40px;
+  }
+  .advantages__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .advantages__icon {
+    height: 88px;
+    margin-bottom: 10px;
+  }
+}

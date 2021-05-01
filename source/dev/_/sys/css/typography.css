@@ -43,9 +43,9 @@
 .t1 h3:last-child {
   margin-bottom: 0;
 }
-.t1 p {
+.t1 ul, .t1 p {
   margin-bottom: 25px;
 }
-.t1 p:last-child {
+.t1 ul:last-child, .t1 p:last-child {
   margin-bottom: 0;
 }

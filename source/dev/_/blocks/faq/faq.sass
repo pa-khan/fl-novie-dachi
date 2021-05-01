@@ -1,8 +1,68 @@
 @import ../../sys/sass/vars
 
-// .faq
+.faq
+	padding-top: 60px
+	padding-bottom: 60px
+	&__title
+		margin-bottom: 27px
+	&__subtitle
+		margin-bottom: 62px
+	&__list
+		background: #fff
+		box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.15)
+	&__item
+		position: relative
+		transition: .3s
+		&:after
+			content: ''
+			left: 23px
+			right: 23px
+			height: 1px
+			position: absolute
+			bottom: 0
+			background-color: #e1e1e1
+		&:last-of-type
+			&:after
+				display: none
+		&.--show
+			&:after
+				bottom: -33px
+			.faq
+				&__q
+					color: #fff
+					background-color: #2791c2
+				&__icon
+					transform: rotate(-90deg)
+					path
+						fill: #fff
+				&__a
+					margin-top: 29px
+					margin-bottom: 29px
+			&:last-of-type
+				padding-bottom: 1px
+	&__q
+		font-size: 20px
+		font-weight: 600
+		padding: 20px 23px
+		transition: .3s
+		display: flex
+		align-items: center
+	&__name
+		width: calc(100% - 12px)
+		padding-right: 10px
+	&__icon
+		width: 12px
+		margin-left: auto
+		transition: .3s
 
-@media screen and (max-width: 1220px)
+	&__a
+		padding: 0 23px
+		line-height: 32.5px
+
+
+		
+
+@media screen and (max-width: 1140px)
 	// .faq
 		
 @media screen and (max-width: 992px)

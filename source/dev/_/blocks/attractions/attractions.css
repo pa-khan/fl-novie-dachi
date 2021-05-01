@@ -1,0 +1,55 @@
+.attractions {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.attractions__title {
+  margin-bottom: 45px;
+}
+.attractions__wrap {
+  position: relative;
+}
+.attractions__slider {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.attractions__item {
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  height: auto;
+}
+.attractions__item-wrap {
+  height: 100%;
+  background-color: #fff;
+  padding: 11px 11px 38px;
+  box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.15);
+}
+.attractions__img {
+  margin-bottom: 27px;
+}
+.attractions__name {
+  font-weight: 600;
+  line-height: 27px;
+}
+.attractions__arrow {
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+}
+.attractions__arrow svg {
+  width: 100%;
+}
+.attractions__arrow.swiper-button-prev {
+  left: -56px;
+}
+.attractions__arrow.swiper-button-next {
+  right: -56px;
+}
+.attractions__arrow:hover polygon {
+  fill: #2791c2;
+}

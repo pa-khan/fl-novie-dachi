@@ -17,3 +17,26 @@
   max-width: 350px;
   margin-top: 60px;
 }
+
+@media screen and (max-width: 992px) {
+  .about__wrap {
+    flex-direction: column;
+  }
+  .about__img {
+    margin-bottom: 30px;
+  }
+  .about__img-wrap {
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .about__readmore {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+}

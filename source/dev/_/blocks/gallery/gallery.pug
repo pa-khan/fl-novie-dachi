@@ -3,25 +3,31 @@ include ../../sys/pug/vars
 .gallery
 	.case
 		.gallery__title.h3 Простой дом, в котором соберется вся семья, где тепло #[br]и уют, куда всегда хочется вернуться!
-		.gallery__slider
-			.gallery__list
-				.gallery__item
-					.gallery__img
-						img(src="" alt="")
-					.gallery__name Для здоровья и вдохновения
-				.gallery__item
-					.gallery__img
-						img(src="" alt="")
-					.gallery__name Все прелести загородной жизни
-				.gallery__item
-					.gallery__img
-						img(src="" alt="")
-					.gallery__name Для здоровья и вдохновения
-				.gallery__item
-					.gallery__img
-						img(src="" alt="")
-					.gallery__name Все прелести загородной жизни
+		.gallery__wrap
+			.gallery__slider.swiper-container
+				.gallery__list.swiper-wrapper
+					.gallery__item.swiper-slide
+						.gallery__img
+							img(src="_/uploads/gallery-1.jpg" alt="")
+						.gallery__name Для здоровья и вдохновения
+					.gallery__item.swiper-slide
+						.gallery__img
+							img(src="_/uploads/gallery-2.jpg" alt="")
+						.gallery__name Все прелести загородной жизни
+					.gallery__item.swiper-slide
+						.gallery__img
+							img(src="_/uploads/gallery-1.jpg" alt="")
+						.gallery__name Для здоровья и вдохновения
+					.gallery__item.swiper-slide
+						.gallery__img
+							img(src="_/uploads/gallery-2.jpg" alt="")
+						.gallery__name Все прелести загородной жизни
 			.gallery__arrows
-				.gallery__arrow.--prev
-				.gallery__arrow.--next
+				.gallery__arrow.swiper-button-prev
+					<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="7.3023mm" height="11.7296mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"viewBox="0 0 11.99 19.25" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"> <defs>  <style type="text/css">   <![CDATA[    .fil0 {fill:#D3D4D3;fill-rule:nonzero}   ]]>  </style> </defs> <g id="Слой_x0020_1">  <metadata id="CorelCorpID_0Corel-Layer"/>  <polygon class="fil0" points="9.47,19.25 -0,9.63 9.47,0 11.99,2.48 4.96,9.63 11.99,16.77 "/> </g></svg>
+				.gallery__arrow.swiper-button-next
+					<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="7.3023mm" height="11.7296mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"viewBox="0 0 12.39 19.91" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"> <defs>  <style type="text/css">   <![CDATA[    .fil0 {fill:#D3D4D3;fill-rule:nonzero}   ]]>  </style> </defs> <g id="Слой_x0020_1">  <metadata id="CorelCorpID_0Corel-Layer"/>  <polygon class="fil0" points="-0,17.34 7.27,9.95 -0,2.56 2.61,0 12.39,9.95 2.61,19.91 "/> </g></svg>
+
+	.gallery__bg.bg
+		img(src="_/uploads/gallery-bg.png" alt="")
 		

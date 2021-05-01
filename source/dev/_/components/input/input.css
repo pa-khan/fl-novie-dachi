@@ -3,11 +3,55 @@
 }
 .input__area {
   width: 100%;
+  font-size: 18px;
   font-family: "Commissioner", sans-serif;
   color: #fff;
+  border-radius: 10px;
   background-color: transparent;
 }
 .input__area::placeholder {
-  opacity: 0.5;
-  color: #fff;
+  opacity: 1;
+  transition: 0.3s;
+}
+.input__area:focus::placeholder {
+  opacity: 0;
+}
+.input__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input.--md .input__area {
+  height: 68px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.input.--md.--icon .input__area {
+  padding-left: 55px;
+}
+.input.--md.--icon .input__icon {
+  width: 16px;
+  left: 25px;
+}
+.input.--md.--icon .input__icon path {
+  fill: #94969a;
+}
+.input.--bg-white .input__area {
+  color: #26252b;
+  background-color: #fff;
+}
+.input.--bg-white .input__area::placeholder {
+  color: #26252b;
+}
+.input.--b-gray .input__area {
+  border: 1px solid #d3d4d3;
+}
+.input.--error .input__area {
+  color: #f00;
+}
+.input.--error .input__area::placeholder {
+  color: #f00;
+}
+.input.--error .input__icon path {
+  fill: #f00;
 }

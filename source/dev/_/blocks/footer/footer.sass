@@ -1,7 +1,26 @@
 @import ../../sys/sass/vars
 
-// .footer
+.footer
+	padding-top: 24px
+	background-color: #f8f8f8
 
+.copy
+	font-size: 14px
+	text-align: center
+	margin-top: 35px
+	padding-top: 21px
+	padding-bottom: 24px
+	border-top: 1px solid #e6e6e6
+
+.up
+	z-index: 90
+	position: fixed
+	right: 5%
+	bottom: 5%
+	transition: .3s
+	transform: scale(0)
+	&.--show
+		transform: scale(1)
 @media screen and (max-width: 1220px)
 	// .footer
 		

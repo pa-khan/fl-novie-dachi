@@ -7,13 +7,13 @@
 // @import ../../components/check/check
 // @import ../../components/checkbox/checkbox
 // @import ../../components/radio/radio
-// @import ../../components/input/input
+@import ../../components/input/input
 // @import ../../components/textarea/textarea
 // @import ../../components/select/select
 // @import ../../components/tabs/tabs
-// @import ../../components/popup/popup
-// @import ../../components/slider/slider
-// @import ../../components/tog/tog
+@import ../../components/popup/popup
+@import ../../components/slider/slider
+@import ../../components/tog/tog
 
 @import typography
 
@@ -30,6 +30,8 @@
 
 .panel
 	align-items: center
+	&__logo
+		width: 132px
 	&__desc
 		font-size: 16px
 		font-weight: 500
@@ -41,6 +43,8 @@
 		width: 220px
 		margin-left: 35px
 		margin-right: 35px
+		&.--ml
+			margin-left: 115px
 	&__contacts
 		width: 210px
 		&-title
@@ -49,6 +53,7 @@
 
 .socials
 	&__item
+		width: 26px
 		margin-right: 7px
 		&:last-of-type
 			margin-right: 0
@@ -72,3 +77,18 @@
 	&__value
 		font-size: 20px
 		font-weight: 700
+
+.office
+	font-size: 16px
+	margin-left: 30px
+	&__title
+		font-weight: 500
+		margin-bottom: 5px
+	&__icon
+		width: 22px
+		font-size: 0
+		padding-top: 3px
+	&__value
+		width: calc(100% - 22px)
+		line-height: 29px
+		

@@ -27,6 +27,9 @@
   font-weight: 500;
   height: 68px;
 }
+.btn.--md img {
+  width: 35px;
+}
 .btn.--gradient {
   color: #fff;
 }
@@ -55,5 +58,33 @@
   background-image: linear-gradient(to left, #b4d84c 0%, #b4d84c 1%, #23ada4 93%, #23ada4 100%);
 }
 .btn.--gradient:hover:after {
+  opacity: 1;
+}
+.btn.--b-blue {
+  border: 1px solid #2791c2;
+}
+.btn.--b-blue:before, .btn.--b-blue:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+.btn.--b-blue:before {
+  z-index: -2;
+  background: linear-gradient(to left, #fff 0%, #fff 1%, #fff 93%, #fff 100%);
+}
+.btn.--b-blue:after {
+  z-index: -1;
+  opacity: 0;
+  background: linear-gradient(to left, #b4d84c 0%, #b4d84c 1%, #23ada4 93%, #23ada4 100%);
+}
+.btn.--b-blue:hover {
+  color: #fff;
+  border-color: transparent;
+}
+.btn.--b-blue:hover:after {
   opacity: 1;
 }
