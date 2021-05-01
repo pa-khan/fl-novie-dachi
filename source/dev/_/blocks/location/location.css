@@ -68,6 +68,9 @@
   .location__item {
     width: calc(100% / 2 - 30px);
   }
+  .location__map {
+    height: 280px;
+  }
 }
 @media screen and (max-width: 380px) {
   .location {
